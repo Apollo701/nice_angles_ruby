@@ -25,7 +25,7 @@ apostrophe, seconds by double quotes. The values of minutes and seconds are show
 =end
 
 def nice_angles
-  File.readlines('test.txt').map do |number|
+  File.readlines(ARGV.first).map do |number|
     @time = number.to_f
     @hours = get_hours
     @minutes = get_minutes
